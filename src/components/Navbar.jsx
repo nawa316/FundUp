@@ -3,7 +3,7 @@ import fundup from "../assets/fundup.png";
 function Navbar() {
   return (
     <>
-      <div className="h-[103px] w-[1240px] mt-[55px] pl-[77px] py-[17px] flex flex-row items-center mx-auto rounded-full bg-white-100">
+      <nav className="h-[103px] w-[1240px] mt-[55px] pl-[77px] py-[17px] flex flex-row items-center mx-auto rounded-full bg-white-100">
         <img
           src={fundup}
           alt="logo FundUp"
@@ -26,7 +26,7 @@ function Navbar() {
             Get Started
           </a>
         </div>
-      </div>
+      </nav>
     </>
   );
 }
