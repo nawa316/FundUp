@@ -74,7 +74,7 @@ function Footer() {
           />
         </svg>
       </div>
-      <div className="flex flex-row justify-center mt-[48px]">
+      <div className="flex flex-row items-center w-full mt-[48px] px-[140px]">
         <div className="flex flex-row text-black-500 gap-[48px] font-medium">
           <a href="#">Terms</a>
           <a href="#">Privacy Notice</a>
@@ -82,9 +82,9 @@ function Footer() {
           <a href="#">Accesibilty Statement</a>
           <a href="#">Cookie Policy</a>
         </div>
-        <div className="flex flex-row">
-          <img src={GooglePlay} alt="CTA GooglePlay" className="absolute" />
-          <img src={AppStore} alt="CTA AppStore" className="absolute" />
+        <div className="flex flex-row gap-[8px] ml-auto">
+          <img src={GooglePlay} alt="CTA GooglePlay" className="" />
+          <img src={AppStore} alt="CTA AppStore" className="" />
         </div>
       </div>
     </footer>

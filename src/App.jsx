@@ -1,13 +1,10 @@
-import { useState } from "react";
-import Footer from "./components/Footer";
-import "./App.css";
+import "./App.css"; 
+import LandingPage from "./view/LandingPage";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <Footer />
+      <LandingPage />
     </>
   );
 }
