@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "image": "../../public/product/product-1.png",
+    "title": "Global Ventures Inc",
+    "description": "a Startup company focused on technology innovation and business solutions."
+  },
+  {
+    "id": 2,
+    "image": "../../public/product/product-2.png",
+    "title": "Bright Future Enterprises",
+    "description": "a Startup company focused on technology innovation and business solutions."
+  },
+  {
+    "id": 3,
+    "image": "../../public/product/product-3.png",
+    "title": "Tree Real Estate",
+    "description": "a leading real estate firm specializing in residential and commercial properties."
+  },
+  {
+    "id": 4,
+    "image": "../../public/product/product-4.png",
+    "title": "Elite Engineering Solutions",
+    "description": "Providing top-notch engineering services and innovative solutions for complex projects."
+  },
+  {
+    "id": 5,
+    "image": "../../public/product/product-5.png",
+    "title": "Prime Manufacturing Group",
+    "description": "A premier manufacturer of high-quality industrial products and components"
+  },
+  {
+    "id": 6,
+    "image": "../../public/product/product-6.png",
+    "title": "Tasty Delight Inc.",
+    "description": "Delivering delicious and nutritious food products to satisfy every palate."
+  }
+]

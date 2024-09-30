@@ -2,13 +2,17 @@ import * as React from "react";
 import Navbar from "./../layout/Navbar";
 import Footer from "./../layout/Footer";
 import Hero from "../assets/Hero.png";
+import ProductCard from "../components/ProductCard";
+import ProductRight from "../storage/product-1.json";
+import ProductLeft from "../storage/product-2.json";
+import Mentor from "../storage/mentor.json";
 
 function LandingPage() {
   return (
     <>
       <Navbar />
       <main>
-        <section className="fixed z-0 w-full h-[120vh] flex flex-row bg-brightOrange-200">
+        <section className="fixed z-0 w-full h-[100vh] flex flex-row bg-brightOrange-200">
           {/* Left Side */}
           <div className="flex basis-1/2 justify-center items-center">
             <div className="flex flex-col items-start gap-[48px] w-[534px]">
@@ -32,7 +36,9 @@ function LandingPage() {
             />
           </div>
         </section>
-        <section className="absolute mt-[140vh] z-10 w-full h-fit flex flex-col rounded-tl-[60px] rounded-tr-[60px] bg-white-100">
+
+        {/*Bottom Side*/}
+        <section className="absolute mt-[125vh] z-10 w-full h-fit flex flex-col rounded-tl-[60px] rounded-tr-[60px] bg-white-100">
           <div className="flex flex-col mt-[115px] gap-[101px] justify-center items-center">
             <h2 className="text-[48px] font-[700] text-center text-black-500">
               About <span className="text-goldDrop-100">FundUp</span>
@@ -53,7 +59,7 @@ function LandingPage() {
               <h2 className="text-[48px] font-[700] text-center text-white-100">
                 Over a Decade of Fundraising Success
               </h2>
-              <div className="flex flex-row mt-[94px] gap-[160px]">
+              <div className="flex flex-row mt-[94px] gap-[180px]">
                 <p className="text-[24px] font-[500] text-center text-white-100">
                   Successful Startups
                 </p>
@@ -64,7 +70,7 @@ function LandingPage() {
                   Accredited Investors
                 </p>
               </div>
-              <div className="flex flex-row mt-[47px] gap-[95px]">
+              <div className="flex flex-row mt-[47px] gap-[60px]">
                 <p className="text-[72px] font-[700] text-center text-white-100">
                   450+
                 </p>
@@ -77,10 +83,52 @@ function LandingPage() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-full h-[1249px] mt-[115px] gap-[101px] justify-center items-center bg-brightOrange-200">
+          <div className="flex flex-col w-full h-[1249px] mt-[115px] gap-[60px] justify-center items-center bg-brightOrange-200">
             <h2 className="text-[48px] font-[700] text-center text-white-100">
               Companies Collab with FundUp
             </h2>
+            <div
+              id="scroll"
+              className="flex flex-nowrap overflow-x-scroll touch-auto items-start pl-[150px]"
+            >
+              {ProductRight.map((product) => (
+                <ProductCard
+                  image={product.image}
+                  title={product.title}
+                  description={product.description}
+                />
+              ))}
+            </div>
+            <div
+              id="scroll"
+              className="flex flex-nowrap overflow-x-scroll touch-auto items-end pr-[150px]"
+            >
+              {ProductLeft.map((product) => (
+                <ProductCard
+                  image={product.image}
+                  title={product.title}
+                  description={product.description}
+                />
+              ))}
+            </div>
+          </div>
+          <div className="flex flex-col w-full h-[1061px] mt-[132px] gap-[127px] justify-center items-center bg-white-100">
+            <h2 className="text-[48px] font-[700] text-center text-black-500">
+              Mentor Recommendation
+            </h2>
+            <div
+              id="scroll"
+              className="flex flex-nowrap overflow-x-scroll touch-auto justify-center items-center"
+            >
+              {Mentor.map((mentor) => (
+                <ProductCard
+                  image={mentor.image}
+                  title={mentor.title}
+                  description={mentor.description}
+                />
+              ))}
+            </div>
+            <hr className="w-[1006px] h-[6px] rounded-[20px] bg-goldDrop-400"></hr>
           </div>
           <Footer />
         </section>

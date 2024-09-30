@@ -1,9 +1,24 @@
 import fundup from "../assets/fundup.png";
 
 function Navbar() {
+  function changeCss() {
+    var navElement = document.querySelector("#navbar");
+    this.scrollY > 300
+      ? ((navElement.style.borderRadius = "0px"),
+        (navElement.style.top = "0px"),
+        (navElement.style.width = "auto"))
+      : ((navElement.style.borderRadius = "9999px"),
+        (navElement.style.top = "30px"),
+        (navElement.style.width = "1240px"));
+  }
+  window.addEventListener("scroll", changeCss, false);
+
   return (
     <>
-      <nav className="fixed z-20 h-[70px] w-[1240px] top-[55px] inset-x-0 mx-auto pl-[77px] py-[17px] flex flex-row items-center rounded-full bg-white-100">
+      <nav
+        id="navbar"
+        className="fixed z-20 h-[70px] inset-x-0 mx-auto pl-[77px] py-[17px] flex flex-row items-center rounded-full bg-white-100 transition-all ease-in-out"
+      >
         <img
           src={fundup}
           alt="logo FundUp"

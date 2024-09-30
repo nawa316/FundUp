@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "image": "../../public/mentor/mentor-1.png",
+    "title": "Dorothy Maria",
+    "description": "Business consultant with more than 10 years of experience in strategy development."
+  },
+  {
+    "id": 2,
+    "image": "../../public/mentor/mentor-2.png",
+    "title": "Olivia Charlotte",
+    "description": "Expert in market analysis and business planning, helping companies achieve sustainable growth."
+  },
+  {
+    "id": 3,
+    "image": "../../public/mentor/mentor-3.png",
+    "title": "Emma Brightstone",
+    "description": "Experienced in project management and digital transformation to improve productivity and innovation."
+  },
+  {
+    "id": 4,
+    "image": "../../public/mentor/mentor-4.png",
+    "title": "John Boston",
+    "description": "Experienced in designing and implementing effective business strategies for various industries."
+  },
+  {
+    "id": 5,
+    "image": "../../public/mentor/mentor-5.png",
+    "title": "Alexander Wale",
+    "description": "Expert in business process optimization and change management to achieve maximum efficiency."
+  },
+  {
+    "id": 6,
+    "image": "../../public/mentor/mentor-6.png",
+    "title": "David Whitneys",
+    "description": "Consultants with a focus on sustainability and corporate social responsibility with 6 years experience."
+  }
+]

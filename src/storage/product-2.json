@@ -1,0 +1,38 @@
+[ 
+  {
+    "id": 1,
+    "image": "../../public/product/product-12.png",
+    "title": "Agrifarm Company",
+    "description": "Dedicated to sustainable farming practices and high-quality agricultural products."
+  },
+  {
+    "id": 2,
+    "image": "../../public/product/product-11.png",
+    "title": "Superior Components Corp.",
+    "description": "Leading the industry in the production of superior quality components and parts."
+  },
+  {
+    "id": 5,
+    "image": "../../public/product/product-10.png",
+    "title": "Lux Logistics Corporate",
+    "description": "Offering comprehensive logistics and supply chain solutions for businesses worldwide."
+  },
+  {
+    "id": 4,
+    "image": "../../public/product/product-9.png",
+    "title": "Elite Consulting Agency",
+    "description": "Providing expert consulting services to help businesses achieve their goals."
+  },
+  {
+    "id": 5,
+    "image": "../../public/product/product-8.png",
+    "title": "Bright Future Enterprises",
+    "description": "Delivering cutting-edge services and solutions to meet modern business needs."
+  },
+  {
+    "id": 6,
+    "image": "../../public/product/product-7.png",
+    "title": "Strategic Enterprises Ltd.",
+    "description": "Specializing in strategic business solutions and enterprise management."
+  }
+]
