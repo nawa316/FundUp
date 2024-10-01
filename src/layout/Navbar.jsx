@@ -17,7 +17,7 @@ function Navbar() {
     <>
       <nav
         id="navbar"
-        className="fixed z-20 h-[70px] inset-x-0 mx-auto pl-[77px] py-[17px] flex flex-row items-center rounded-full bg-white-100 transition-all ease-in-out"
+        className="fixed z-20 h-[70px] top-[30px] w-[1240px] inset-x-0 mx-auto pl-[77px] py-[17px] flex flex-row items-center rounded-full bg-white-100 transition-all ease-in-out"
       >
         <img
           src={fundup}
