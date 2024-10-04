@@ -1,6 +1,6 @@
 import * as React from "react";
-import Navbar from "./../layout/Navbar";
-import Footer from "./../layout/Footer";
+import Navbar from "../layout/Navbar";
+import Footer from "../layout/Footer";
 import Hero from "../assets/Hero.png";
 import ProductCard from "../components/ProductCard";
 import ProductRight from "../storage/product-1.json";

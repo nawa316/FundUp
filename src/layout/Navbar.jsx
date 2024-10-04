@@ -1,4 +1,5 @@
 import fundup from "../assets/fundup.png";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   function changeCss() {
@@ -19,27 +20,35 @@ function Navbar() {
         id="navbar"
         className="fixed z-20 h-[70px] top-[30px] w-[1240px] inset-x-0 mx-auto pl-[77px] py-[17px] flex flex-row items-center rounded-full bg-white-100 transition-all ease-in-out"
       >
-        <img
-          src={fundup}
-          alt="logo FundUp"
-          className="w-[169px] h-[47px] mr-auto"
-        />
+        <Link to="/" className="mr-auto">
+          <img
+            src={fundup}
+            alt="logo FundUp"
+            className="w-[169px] h-[47px] mr-auto"
+          />
+        </Link>
         <div className="flex flex-row items-center gap-[80px] mr-[55px]">
-          <a href="#" className="text-black-500 text-[16px] font-medium">
+          <Link to="/about" className="text-black-500 text-[16px] font-medium">
             About
-          </a>
-          <a href="#" className="text-black-500 text-[16px] font-medium">
+          </Link>
+          <Link
+            to="/services"
+            className="text-black-500 text-[16px] font-medium"
+          >
             Services
-          </a>
-          <a href="#" className="text-black-500 text-[16px] font-medium">
-            Contact
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/contacts"
+            className="text-black-500 text-[16px] font-medium"
+          >
+            Contacts
+          </Link>
+          <Link
+            to="/login"
             className="border-[1px] rounded-full border-goldDrop-300 text-goldDrop-300 p-[14px] text-[16px] font-medium"
           >
             Get Started
-          </a>
+          </Link>
         </div>
       </nav>
     </>
